@@ -88,7 +88,13 @@
     <h3>Laço while e PHP</h3>
     @php
         $indice = 0
+        $tag_span = '<span class="text-warnig">' . $indice . '</span>'; 
     @endphp
+    {{-- Não funcion a tag --}}
+    {{ $tag_span }}
+
+    {{-- Funciona tag --}}
+    <h3>{!! $tag_span !!}</h3>
     @while($indice < 10)
         <p>Indice: {{ $indice }} </p>
         @php
