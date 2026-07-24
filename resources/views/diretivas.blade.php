@@ -87,7 +87,7 @@
     {{-- while e php --}}
     <h3>Laço while e PHP</h3>
     @php
-        $indice = 0
+        $indice = 0;
         $tag_span = '<span class="text-warnig">' . $indice . '</span>'; 
     @endphp
     {{-- Não funcion a tag --}}
